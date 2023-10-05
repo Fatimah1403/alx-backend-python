@@ -3,7 +3,7 @@
      as arguments and returns a tuple. The first
      element of the tuple is the string k
 """
-from typing import List, Union, Tuple
+import typing
 
 
 def to_kv(k: str, v: union[int, float]) -> Tuple[str, float]:
