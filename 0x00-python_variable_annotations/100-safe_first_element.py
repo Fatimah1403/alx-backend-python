@@ -14,13 +14,9 @@ def safe_first_element(lst):
 from typing import Any, List, Union
 
 
-def safe_first_element(lst: List[Union[Any, None]]) -> Union[Any, None]:
-    """
-    Safely retrieves the first element of a list, or returns
-    None if the list is empty.
-    :param lst: A list that can contain elements of any type or None.
-    :return: The first element of the list or None if the list is empty.
-    """
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
+    '''Retrieves the first element of a sequence if it exists.
+    '''
     if lst:
         return lst[0]
     else:
